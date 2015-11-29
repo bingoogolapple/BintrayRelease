@@ -1,5 +1,9 @@
 package cn.bingoogolapple.bintrayrelease;
 
+import android.support.v7.widget.RecyclerView;
+
+import cn.bingoogolapple.bgabanner.BGABanner;
+
 /**
  * 作者:王浩 邮件:bingoogolapple@gmail.com
  * 创建时间:15/11/28 下午8:22
@@ -24,6 +28,8 @@ public class TestJCenterClass {
      * @return
      */
     public String getChinese() {
+        RecyclerView recyclerView;
+        BGABanner banner;
         return "测试返回中文";
     }
 }
