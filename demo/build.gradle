@@ -14,6 +14,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':jcenter-release')
-//    compile 'cn.bingoogolapple:jcenter-release:3.0.0@aar'
+//    compile project(':jcenter-release')
+    compile 'cn.bingoogolapple:jcenter-release:7.0.0@aar'
 }
