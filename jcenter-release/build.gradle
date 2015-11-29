@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 
-
 android {
     compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
     buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
@@ -12,7 +11,10 @@ android {
 
     dependencies {
         compile fileTree(include: ['*.jar'], dir: 'libs')
+        compile 'com.android.support:recyclerview-v7:23.1.1'
+        compile 'com.nineoldandroids:library:2.4.0'
     }
 }
 
-apply from: 'bintray-release.gradle'
+// gradle install bintrayUpload
+apply from: 'https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/jcenter-release.gradle'
